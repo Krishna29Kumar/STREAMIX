@@ -4,13 +4,13 @@ const ThemeContext = createContext();
 
 export function ThemeProvider({ children }) {
   const [dark, setDark] = useState(() => {
-    const saved = localStorage.getItem("filmspace_theme");
+    const saved = localStorage.getItem("streamix_theme");
     return saved ? saved === "dark" : true;
   });
 
   useEffect(() => {
     document.documentElement.classList.toggle("dark", dark);
-    localStorage.setItem("filmspace_theme", dark ? "dark" : "light");
+    localStorage.setItem("streamix_theme", dark ? "dark" : "light");
   }, [dark]);
 
   return (

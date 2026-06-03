@@ -33,7 +33,7 @@ export default function App() {
             </Suspense>
             <footer className="border-t border-white/5 py-8 mt-12">
               <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <p className="font-display text-xl tracking-widest text-brand-400 mb-1">FILMSPACE</p>
+                <p className="font-display text-xl tracking-widest text-brand-400 mb-1">STREAMIX</p>
                 <p className="text-xs text-gray-600">Powered by TMDB API · Built with React + Redux + Tailwind</p>
               </div>
             </footer>

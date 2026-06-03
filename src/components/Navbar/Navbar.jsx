@@ -43,10 +43,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-8 h-8 bg-brand-500 rounded-lg flex items-center justify-center shadow-lg shadow-brand-500/40 group-hover:shadow-brand-500/60 transition-all">
-              <span className="text-white font-display text-lg leading-none">F</span>
-            </div>
-            <span className="font-display text-2xl tracking-widest text-white">FILMSPACE</span>
+            <img src="/logo.png?v=4" alt="Streamix" className="w-8 h-8 object-contain rounded-md transition-transform group-hover:scale-105" />
+            <span className="font-display text-2xl tracking-widest text-white">STREAMIX</span>
           </Link>
 
           {/* Desktop Nav */}

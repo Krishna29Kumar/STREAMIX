@@ -49,7 +49,7 @@ const moviesSlice = createSlice({
     searchQuery: "",
     selectedGenre: "",
     sortBy: "popularity.desc",
-    watchlist: JSON.parse(localStorage.getItem("filmspace_watchlist") || "[]"),
+    watchlist: JSON.parse(localStorage.getItem("streamix_watchlist") || "[]"),
   },
   reducers: {
     setSearchQuery: (state, action) => { state.searchQuery = action.payload; },
@@ -65,7 +65,7 @@ const moviesSlice = createSlice({
       } else {
         state.watchlist.splice(idx, 1);
       }
-      localStorage.setItem("filmspace_watchlist", JSON.stringify(state.watchlist));
+      localStorage.setItem("streamix_watchlist", JSON.stringify(state.watchlist));
     },
   },
   extraReducers: (builder) => {
